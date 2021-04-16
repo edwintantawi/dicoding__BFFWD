@@ -1,0 +1,531 @@
+/* font */
+/* font face */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+/* header */
+
+header {
+  position: relative;
+}
+
+header div.headerTop {
+  /* background-image: url(/img/banner1.jpg); */
+  background-color: black;
+  background-position: top;
+  background-size: cover;
+  height: 300px;
+  padding-top: 50px;
+}
+
+header div.headerTop h1 {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 70px;
+  text-align: center;
+}
+
+header div.headerTop p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+
+}
+
+
+header div.headerMid {
+  background-color: white;
+  width: 90%;
+  margin: 0px auto;
+
+  position: absolute;
+  top: 265px;
+  right: 0;
+  left: 0;
+
+
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+header div.headerMid div.searchBar {
+  display: flex;
+  align-content: center;
+  margin: 20px;
+}
+
+header div.headerMid div.searchBar input {
+  border: none;
+  border-right: 1px solid rgb(99, 99, 99);
+  height: 40px;
+  width: 100%;
+  padding: 0px 10px;
+
+  font-size: 22px;
+}
+
+header div.headerMid div.searchBar input:focus {
+  outline: none;
+}
+
+header div.headerMid div.searchBar button {
+  border: none;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+
+  cursor: pointer;
+  outline: none;
+}
+
+header div.headerMid div.searchBar button img {
+  width: 100%;
+}
+
+header div.headerBottom {
+  background-color: rgb(41, 41, 41);
+  height: 150px;
+  border-top: 10px groove whitesmoke;
+}
+
+/* end header */
+main {
+  padding: 5% 10%;
+}
+
+.not-found {
+  color: red;
+  margin-bottom: 50px;
+}
+
+main h2.sub {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color: rgb(70, 70, 70);
+}
+
+main h2.sub.hide {
+  display: none;
+}
+
+
+main article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main .card {
+  width: 375px;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 30px;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+
+  cursor: pointer;
+}
+
+main .card:hover {
+  opacity: 0.8;
+}
+
+main .card img {
+  width: 50%;
+  border-radius: 5px;
+}
+
+main .card section {
+  width: 50%;
+  padding: 0 5px 0 15px;
+  overflow: hidden;
+  display: flex;
+}
+
+main .card section h2 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 23px;
+  margin-bottom: 12px;
+  margin: auto 0px;
+}
+
+button.showMore {
+  background-color: salmon;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 25px;
+  padding: 10px 30px;
+  margin: 0px auto;
+  display: block;
+  cursor: pointer;
+}
+
+div#showCard {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  line-height: 0;
+
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  overflow: scroll;
+}
+
+div#showCard button#back-button {
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  padding: 15px 50px;
+  font-weight: bold;
+  color: salmon;
+}
+
+div#showCard div.container {
+  display: flex;
+  padding: 30px;
+  width: 100%;
+}
+
+div#showCard div.pic {
+  width: 40%;
+  margin: auto 0;
+
+}
+
+div#showCard .pic img {
+  width: 100%;
+
+}
+
+div#showCard div.desc {
+  width: 60%;
+  line-height: normal;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div#showCard div.desc hr {
+  margin: 10px 0 25px 0;
+}
+
+div#showCard div.desc div.instruc p {
+  overflow: scroll;
+  height: 300px;
+}
+
+div#showCard div.desc div.list {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+div#showCard div.desc div.list div {
+  width: 48%;
+}
+
+div#showCard div.desc div.list div ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+div#showCard div.desc div.list div ul li {
+  margin: 0 10px 0 20px;
+}
+
+/* end main */
+
+/* footer */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 10% 0 10%;
+  background-color: rgb(41, 41, 41);
+
+}
+
+footer h2 {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 50px;
+  width: 80%;
+}
+
+footer div.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  align-items: center;
+}
+
+footer div.social-media a {
+  text-decoration: none;
+}
+
+footer div.social-media img {
+  width: 40px;
+}
+
+footer span {
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  border-top: 5px solid grey;
+  padding: 30px 0;
+}
+
+footer span a {
+  text-decoration: none;
+  color: white;
+}
+
+/* end footer */
+
+
+
+/* ******************************************************** responsive ******************************************************** */
+/* mobile phone */
+@media only screen and (max-width: 850px) {
+
+  /* header */
+  header div.headerTop {
+    height: 240px;
+    padding-top: 40px;
+  }
+
+  header div.headerTop h1 {
+    font-size: 50px;
+  }
+
+
+  header div.headerMid {
+    top: 215px;
+  }
+
+  header div.headerMid div.searchBar {
+    display: flex;
+    align-content: center;
+    margin: 10px;
+  }
+
+  header div.headerMid div.searchBar input {
+    padding: 0px 5px;
+    font-size: 18px;
+  }
+
+  header div.headerBottom {
+    height: 100px;
+  }
+
+  /* end header */
+  /* main */
+  main {
+    padding: 5% 16px;
+  }
+
+  main .card {
+    width: 49%;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 8px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+
+
+    cursor: pointer;
+  }
+
+  main .card img {
+    width: 100%;
+  }
+
+  main .card section {
+    width: 100%;
+    padding: 8px 5px;
+  }
+
+  main .card section h2 {
+    line-height: 23px;
+    margin-bottom: 12px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  button.showMore {
+    font-size: 18px;
+    padding: 8px 50px;
+    margin: 20px auto 0 auto;
+  }
+
+
+
+
+
+
+
+  div#showCard {
+    /* position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: white;
+  line-height: 0; */
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    overflow: scroll;
+  }
+
+  div#showCard button#back-button {
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+
+    padding: 15px 0;
+    width: 100%;
+    margin: 15px 0 20px 0
+  }
+
+  div#showCard div.container {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    width: 100%;
+    justify-content: space-between;
+    overflow: scroll;
+  }
+
+  div#showCard div.pic {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  div#showCard .pic img {
+    width: 100%;
+  }
+
+  div#showCard div.desc {
+    width: 100%;
+    line-height: normal;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div#showCard div.desc hr {
+    margin: 3px 0 15px 0;
+  }
+
+  div#showCard div.desc div.instruc p {
+    font-size: 14px;
+    overflow: scroll;
+    height: 250px;
+  }
+
+  div#showCard div.desc div.list {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+  }
+
+  div#showCard div.desc div.list div {
+    width: 48%;
+  }
+
+  div#showCard div.desc div.list div ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  div#showCard div.desc div.list div ul li {
+    margin: 0 10px 0 20px;
+  }
+
+  /* end main */
+
+  /* footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 50px 16px 0 16px;
+
+  }
+
+  footer h2 {
+    color: white;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  footer div.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+  }
+
+  footer div.social-media img {
+    width: 40px;
+  }
+
+  footer span {
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 3px solid grey;
+    padding: 20px 0;
+  }
+
+
+  /* end footer */
+}
+
+/* ******************************************************** responsive ******************************************************** */
+/* tablet */
+@media screen and (min-width: 850px) and (max-width:1300px) {}
